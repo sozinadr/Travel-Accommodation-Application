@@ -1,13 +1,12 @@
-
-import './App.css'
+import "./App.css";
+import Home from "./assets/pages/Home";
 
 function App() {
-
   return (
     <>
-      <h1 className='bg-red-500'>hi</h1>
+      <Home />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
