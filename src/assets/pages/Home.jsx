@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import img from "/public/herosection.jpg";
+import FooterComponent from "../components/FooterComponent";
+import Places from "../components/Places";
+import Hotels from "../components/Hotels";
 
 const Home = () => {
   let [isLoggedIn, setLogIn] = useState(true);
 
   return (
     <div
-      className="h-full bg-blue-50 text-blue-900 font-sans"
+      className="h-full bg-white text-blue-900 font-sans"
       style={{ fontFamily: "Raleway, sans-serif" }}
     >
       <header
@@ -73,7 +76,7 @@ const Home = () => {
         </nav>
       </header>
 
-      <div className="h-[60vh] flex justify-center items-center">
+      <div className="h-[60vh]  flex justify-center items-center w-full">
         <div className="container relative w-full h-[45vh] flex flex-col justify-center items-center rounded-3xl mx-14  ">
           <img
             src={img}
@@ -89,7 +92,7 @@ const Home = () => {
           </button> */}
           <div className=" absolute bottom-4 bg-white rounded-full p-3 flex  ">
             <ul className="flex justify-center text-black container  ">
-              <li className="flex flex-col w-[250px] items-center">
+              <li className="flex flex-col w-[250px] items-center border-r-2 border-black">
                 Location
                 <span className="opacity-60	">Where are you going?</span>
               </li>{" "}
@@ -115,11 +118,9 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center h-screen">
-        <h1 className="text-6xl font-bold">
-          {isLoggedIn ? "Welcome, User" : "Login"}
-        </h1>
-      </div>
+      <Places />
+      <Hotels />
+      <FooterComponent />
     </div>
   );
 };
