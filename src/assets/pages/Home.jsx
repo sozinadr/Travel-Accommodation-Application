@@ -1,20 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import img from "/public/herosection.jpg";
 import FooterComponent from "../components/FooterComponent";
 import Places from "../components/Places";
 import Hotels from "../components/Hotels";
+import IMAGES from "../../Images/Images";
 
 const Home = () => {
   let [isLoggedIn, setLogIn] = useState(true);
+  let [theme, setTheme] = useState("light"); // Added state for theme management
+  let [isLight, setLight] = useState(true);
+
+  // Added useEffect to apply theme to body element
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
+  const logIn = () => setLogIn(true); // Added separate function for login
+  const logOut = () => setLogIn(false); // Added separate function for logout
+  const toggleTheme = () => {
+    setLight(!isLight); // Toggle light state
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  }; // Added function to toggle theme
 
   return (
     <div
-      className="h-full bg-white text-blue-900 font-sans"
+      className={`h-full font-sans ${
+        theme === "light" ? "bg-white text-blue-900" : "bg-gray-900 text-white"
+      }`} // Added dynamic classes based on theme
       style={{ fontFamily: "Raleway, sans-serif" }}
     >
       <header
         className="p-4 shadow-lg bg-white text-black rounded-lg sticky top-0 z-50"
-        style={{ zIndex: 1000 }} // Ensuring the navbar stays on top of other elements
+        style={{ zIndex: 1000 }}
       >
         <nav className="container mx-auto flex justify-between items-center rounded-lg">
           <div className="flex items-center">
@@ -57,6 +74,19 @@ const Home = () => {
               <option>English</option>
               <option>Spanish</option>
             </select>
+            <button
+              // CHANGED: Added onClick event to toggle theme and added tooltip
+              className="text-blue-900 hover:text-blue-300 hover:custom-shadow transition-shadow duration-300 rounded-full p-2"
+              onClick={toggleTheme}
+              title="Toggle Theme"
+            >
+              {/* CHANGED: Icon changes based on theme */}
+              <img
+                className="w-10 h-10"
+                src={isLight ? IMAGES.Image24 : IMAGES.Image25}
+              />
+              <i className={`fas fa-${theme === "light" ? "moon" : "sun"}`}></i>
+            </button>
             {isLoggedIn ? (
               <button
                 className="bg-white text-blue-900 p-2 rounded-full hover:bg-blue-100 border hover:custom-shadow transition-shadow duration-300"
