@@ -82,3 +82,29 @@ option {
     #76a4f1
   );
 }
+
+.card-container {
+  perspective: 1000px;
+  /* Add perspective for the rotate effect */
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.card-container:hover {
+  transform: scale(1.1) rotateX(10deg);
+  /* Add rotate effect on hover */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Add transition effect to the image inside the card container */
+
+.card-container img {
+  transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Change the brightness and contrast of the image on hover */
+
+.card-container:hover img {
+  filter: brightness(80%) contrast(120%);
+  transform: rotate(360deg);
+  /* Add rotate effect to the image */
+}

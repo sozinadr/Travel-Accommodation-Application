@@ -136,7 +136,7 @@ const Home = () => {
                 <span className="opacity-60	">Number of guests</span>
               </li>
               <div className="overlay w-full ">
-                <span id="span"> Welcome to jurasic park</span>
+                <span id="span"> Book your Accommodation </span>
               </div>
             </ul>
           </div>
