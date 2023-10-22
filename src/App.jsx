@@ -5,6 +5,8 @@ import Home from "./assets/pages/Home";
 import Login from "./assets/components/Login";
 import SignUpAuth from "./assets/components/SignUpAuth";
 import MapPage from "./assets/pages/MapPage";
+import Admin from "./assets/pages/Admin";
+import Users from "./assets/pages/Users";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/users" element={<Users />} />
         {/* <Route path="/accomodations" element={<Login />} /> */}
 
         <Route path="/signup" element={<SignUpAuth />} />
