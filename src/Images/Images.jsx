@@ -29,6 +29,7 @@ const IMAGES = {
   Icon3: new URL("./Icon3.png", import.meta.url).href,
   Icon4: new URL("./Icon4.png", import.meta.url).href,
   Icon5: new URL("./Icon5.png", import.meta.url).href,
+  Icon6: new URL("./Icon6.png", import.meta.url).href,
 };
 
 export default IMAGES;

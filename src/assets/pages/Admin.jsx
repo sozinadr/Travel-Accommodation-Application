@@ -33,7 +33,7 @@ const Admin = () => {
             <h1>About Us</h1>
           </div>
           <div className="flex border-1 border-black justify-start ml-2 items-center">
-            <img className="m-4 w-10 h-10 p-1" src={IMAGES.Icon2} />
+            <img className="m-4 w-10 h-10 p-1" src={IMAGES.Icon6} />
             <h1>F&Q</h1>
           </div>
         </div>
