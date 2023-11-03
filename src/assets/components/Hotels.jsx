@@ -4,8 +4,8 @@ import IMAGES from "../../Images/Images";
 
 const Hotels = () => {
   return (
-    <div className="flex flex-col">
-      <h1 className="ml-20 mb-4">Hotels Loved by guests</h1>
+    <div className="flex flex-col ">
+      <h1 className="ml-52 text-black mb-4 ">Hotels Loved by guests</h1>
       <div className="flex justify-center gap-5 ">
         <Card
           className="card-container"

@@ -108,3 +108,91 @@ option {
   transform: rotate(360deg);
   /* Add rotate effect to the image */
 }
+
+.map-container {
+  position: relative;
+  height: 100vh;
+}
+
+.map {
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-control {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.geo-control {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.marker-icon {
+  font-size: 24px;
+  color: #d00;
+  cursor: pointer;
+}
+
+.popup {
+  max-width: 200px;
+}
+
+.search-box {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 400px;
+  z-index: 1000;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.filter-section {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+
+.filter-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.filter-section:hover .filter-header {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+*,
+*::before,
+*::after {
+  border: 10px solid red;
+}

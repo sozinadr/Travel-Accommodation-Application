@@ -6,7 +6,7 @@ const Places = () => {
       <div className="">
         <h1 className="mb-5"> Popular destinations </h1>
         <div className=" flex justify-center gap-10 ">
-          <div className="relative">
+          <div className="relative transform transition-transform duration-500 hover:scale-105">
             <h1 className="absolute bottom-5 left-5 bg-gray-500 rounded-full bg-opacity-50 p-2 text-white">
               Lebnon
             </h1>
@@ -17,20 +17,23 @@ const Places = () => {
             <img className="w-[290px] h-full rounded-2xl" src={IMAGES.Image2} />
           </div>
 
-          <div>
-            <div className="flex flex-col gap-4 relative">
+          <div className="flex flex-col gap-4 relative">
+            <div className="relative transform transition-transform duration-500 hover:scale-105">
               <h1 className="absolute bottom-5 left-5 bg-gray-500 rounded-full bg-opacity-50 p-2 text-white">
-                Lebnon
-              </h1>
-              <h1 className="absolute top-[130px] left-5 bg-gray-400 rounded-full bg-opacity-50 p-2 text-white">
-                Greek
+                Lebanon
               </h1>
               <img
                 className="w-[290px] h-full rounded-2xl"
                 src={IMAGES.Image3}
               />
+            </div>
+
+            <div className="relative transform transition-transform duration-500 hover:scale-105">
+              <h1 className="absolute bottom-5 left-5 bg-gray-400 rounded-full bg-opacity-50 p-2 text-white">
+                Greek
+              </h1>
               <img
-                className="w-[290px] h-full rounded-2xl justify-self-end mt-10"
+                className="w-[290px] h-full rounded-2xl justify-self-end "
                 src={IMAGES.Image4}
               />
             </div>
@@ -43,7 +46,7 @@ const Places = () => {
             <img className="w-[290px] h-full rounded-2xl" src={IMAGES.Image5} />
           </div> */}
 
-          <div className="relative">
+          <div className="relative transform transition-transform duration-500 hover:scale-105">
             <h1 className="absolute bottom-5 left-5 bg-gray-500 rounded-full bg-opacity-50 p-2 text-white">
               Lebnon
             </h1>

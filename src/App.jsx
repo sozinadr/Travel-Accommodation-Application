@@ -10,6 +10,13 @@ import Users from "./assets/pages/Users";
 import Clients from "./assets/pages/Clients";
 import ContactUs from "./assets/pages/ContactUs";
 import FAQ from "./assets/pages/FAQ";
+import Accommodations from "./assets/pages/Accommodations";
+import HotelDetails from "./assets/pages/HotelDetails";
+import CurrencyConverter from "./assets/pages/CurrencyConverter";
+import UserProfile from "./assets/pages/UserProfile";
+import HotelProfile from "./assets/pages/HotelProfile";
+import Chatbot from "./assets/components/Chatbot";
+import "./App.css";
 
 function App() {
   return (
@@ -22,9 +29,12 @@ function App() {
         <Route path="/clients" element={<Clients />} />
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/faq" element={<FAQ />} />
-
-        {/* <Route path="/accomodations" element={<Login />} /> */}
-
+        <Route path="/accommodations" element={<Accommodations />} />
+        <Route path="/hotelDetails" element={<HotelDetails />} />
+        <Route path="/currencyConverter" element={<CurrencyConverter />} />
+        <Route path="/userProfile" element={<UserProfile />} />
+        <Route path="/hotelProfile" element={<HotelProfile />} />
+        <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/signup" element={<SignUpAuth />} />
         <Route path="/map" element={<MapPage />} />
       </Routes>

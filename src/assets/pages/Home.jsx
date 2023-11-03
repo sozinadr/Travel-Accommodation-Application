@@ -135,7 +135,7 @@ const Home = () => {
                 Guest
                 <span className="opacity-60	">Number of guests</span>
               </li>
-              <div className="overlay w-full ">
+              <div className="overlay w-full overflow-hidden ">
                 <span id="span"> Book your Accommodation </span>
               </div>
             </ul>
@@ -145,8 +145,14 @@ const Home = () => {
 
       <Places />
       <Hotels />
-      <div className="h-[100vh] w-full flex justify-center items-center">
-        <MapBox />
+
+      <div className="w-full my-10 flex justify-center flex-col items-center overflow-hidden ">
+        <h1 className="text-4xl font-bold text-center text-black py-4  ">
+          Map
+        </h1>
+        <div className="w-[1050px] my-10 flex justify-center flex-col items-center overflow-hidden h-[50vh] rounded-3xl shadow-sm shadow-black">
+          <MapBox />
+        </div>
       </div>
 
       <FooterComponent />
