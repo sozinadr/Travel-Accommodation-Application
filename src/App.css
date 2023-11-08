@@ -191,8 +191,3 @@ option {
   background: rgba(0, 0, 0, 0.05);
 }
 
-*,
-*::before,
-*::after {
-  border: 10px solid red;
-}

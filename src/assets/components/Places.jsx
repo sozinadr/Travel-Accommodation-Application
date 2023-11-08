@@ -39,13 +39,6 @@ const Places = () => {
             </div>
           </div>
 
-          {/* <div className="relative">
-            <h1 className="absolute bottom-5 left-5 bg-gray-500 rounded-full bg-opacity-50 p-2 text-white">
-              Lebnon
-            </h1>
-            <img className="w-[290px] h-full rounded-2xl" src={IMAGES.Image5} />
-          </div> */}
-
           <div className="relative transform transition-transform duration-500 hover:scale-105">
             <h1 className="absolute bottom-5 left-5 bg-gray-500 rounded-full bg-opacity-50 p-2 text-white">
               Lebnon
