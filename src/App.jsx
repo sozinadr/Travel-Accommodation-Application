@@ -17,6 +17,8 @@ import UserProfile from "./assets/pages/UserProfile";
 import HotelProfile from "./assets/pages/HotelProfile";
 import Chatbot from "./assets/components/Chatbot";
 import "./App.css";
+import HotelBookingPage from "./assets/pages/HotelBookingPage";
+import HotelBooking from "./assets/pages/HotelBooking";
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/signup" element={<SignUpAuth />} />
         <Route path="/map" element={<MapPage />} />
+        <Route path="/hotelBookingPage" element={<HotelBookingPage />} />
+        <Route path="/hotel/:id" element={<HotelBooking />} />
       </Routes>
     </>
   );

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import IMAGES from "../../Images/Images";
+import IMAGES from "../../Images/Images"; // Ensure you have appropriate illustrations
 import { Link } from "react-router-dom";
 
 const ContactUs = () => {
@@ -21,41 +21,12 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center space-y-8 bg-gray-100 px-4 py-8">
-      <div className=" w-1/4 mt-4">
-        <div className="flex border-1 border-black justify-start ml-2 items-center">
-          <img className="m-4 w-10 h-10 p-1" src={IMAGES.Icon1} />
-          <h1>Dashboard</h1>
-        </div>
-        <Link
-          to="/users"
-          className="flex border-1 border-black justify-start ml-2 items-center"
-        >
-          {" "}
-          <img className="m-4 w-10 h-10 p-1" src={IMAGES.Icon1} />
-          <h1>Users</h1>{" "}
-        </Link>
-        <div className="flex border-1 border-black justify-start ml-2 items-center">
-          <img className="m-4 w-10 h-10 p-1" src={IMAGES.Icon4} />
-          <h1>Clients</h1>
-        </div>
-        <div className="flex border-1 border-black justify-start ml-2 items-center">
-          <img className="m-4 w-10 h-10 p-1" src={IMAGES.Icon3} />
-          <h1>Contacts</h1>
-        </div>
-        <div className="flex border-1 border-black justify-start ml-2 items-center">
-          <img className="m-4 w-10 h-10 p-1" src={IMAGES.Icon2} />
-          <h1>About Us</h1>
-        </div>
-        <div className="flex border-1 border-black justify-start ml-2 items-center">
-          <img className="m-4 w-10 h-10 p-1" src={IMAGES.Icon6} />
-          <h1>F&Q</h1>
-        </div>
-      </div>
-
+    <div className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 px-4 py-8">
       {/* Contact Information & Description Card */}
-      <div className="bg-white p-8 rounded-lg shadow-md w-full md:w-2/3 lg:w-1/2 space-y-6">
-        <h2 className="text-2xl font-bold">Contact Information</h2>
+      <div className="bg-white p-8 rounded-lg shadow-xl w-full md:w-1/3 lg:w-1/4 space-y-6 mr-4 transform hover:scale-105 transition duration-500 ease-in-out">
+        <h2 className="text-2xl font-bold text-white bg-gradient-to-r from-purple-600 to-pink-600 inline-block px-3 py-1 rounded">
+          Contact Information
+        </h2>
         <p>Address: 123 Main St, City, Country 12345</p>
         <p>Email: contact@website.com</p>
         <p>Phone: +123 456 7890</p>
@@ -64,12 +35,24 @@ const ContactUs = () => {
           accommodations for their needs. Whether you're on a business trip or a
           vacation, we've got you covered!
         </p>
+        <img
+          src={IMAGES.Image2}
+          alt="Illustration"
+          className="w-full h-auto mt-4"
+        />{" "}
+        {/* Replace with your illustration */}
       </div>
 
       {/* Contact Form Card */}
-      <div className="bg-white p-8 rounded-lg shadow-md w-full md:w-2/3 lg:w-1/2 space-y-6">
-        <h2 className="text-2xl font-bold mb-4">Send us a message</h2>
-        <form onSubmit={handleSubmit} className="space-y-4">
+      <div className="bg-white p-8 rounded-lg shadow-xl w-full md:w-1/2 lg:w-1/3 space-y-6 ml-4 transform hover:scale-105 transition duration-500 ease-in-out">
+        <h2 className="text-2xl font-bold text-white bg-gradient-to-r from-purple-600 to-pink-600 inline-block px-3 py-1 rounded">
+          Send us a message
+        </h2>
+        <form
+          action="https://formsubmit.co/sozyarnadir@gmail.com"
+          method="POST"
+          className="space-y-4"
+        >
           <div>
             <label className="block text-sm font-medium mb-2" htmlFor="name">
               Name
